@@ -1,96 +1,128 @@
-/* Catalog Stylesheet Baseline Reset */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W3C Store - Products Catalog</title>
+    <link rel="stylesheet" href="../css/products.css">
+</head>
+<body>
 
-body {
-    background-color: #f3f4f6;
-    padding: 20px;
-}
+    <!-- RESPONSIVE HEADER -->
+    <header class="responsive-layout header-container">
+        <div class="logo">LOGO</div>
+        <nav class="nav-links">
+            <a href="../index.html">Home Page</a>
+        </nav>
+    </header>
 
-.catalog-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 20px;
-    border-bottom: 20px solid transparent;
-}
+    <!-- RESPONSIVE MAIN GRID (10 ARTICLES) -->
+    <main class="responsive-layout catalog-grid">
+        <!-- Item 1 -->
+        <article class="product-card">
+            <img src="https://placeholder.com" alt="Product Item">
+            <h3>Premium Wireless Headphones</h3>
+            <p>High-quality sound with long-lasting battery life.</p>
+            <div class="price">$149.99</div>
+        </article>
 
-.back-btn {
-    text-decoration: none;
-    color: #3498db;
-    font-weight: bold;
-}
+        <!-- Item 2 -->
+        <article class="product-card">
+            <img src="https://placeholder.com" alt="Product Item">
+            <h3>Premium Wireless Headphones</h3>
+            <p>High-quality sound with long-lasting battery life.</p>
+            <div class="price">$149.99</div>
+        </article>
 
-/* --- GRID DISPLAY LAYOUT ENGINE --- */
-/* Stacks components automatically as single item rows on compact mobile views */
-.catalog-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-}
+        <!-- Item 3 -->
+        <article class="product-card">
+            <img src="https://placeholder.com" alt="Product Item">
+            <h3>Premium Wireless Headphones</h3>
+            <p>High-quality sound with long-lasting battery life.</p>
+            <div class="price">$149.99</div>
+        </article>
 
-/* Changes structure to 3 columns on tablet and desktop screens */
-@media (min-width: 768px) {
-    .catalog-container {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
+        <!-- Item 4 -->
+        <article class="product-card">
+            <img src="https://placeholder.com" alt="Product Item">
+            <h3>Premium Wireless Headphones</h3>
+            <p>High-quality sound with long-lasting battery life.</p>
+            <div class="price">$149.99</div>
+        </article>
 
-/* Card Visual Framework */
-.catalog-card {
-    background: #ffffff;
-    border-radius: 8px;
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-}
+        <!-- Item 5 -->
+        <article class="product-card">
+            <img src="https://placeholder.com" alt="Product Item">
+            <h3>Premium Wireless Headphones</h3>
+            <p>High-quality sound with long-lasting battery life.</p>
+            <div class="price">$149.99</div>
+        </article>
 
-.catalog-card img {
-    width: 100%;
-    height: auto;
-    border-radius: 6px;
-    margin-bottom: 12px;
-}
+        <!-- Item 6 -->
+        <article class="product-card">
+            <img src="https://placeholder.com" alt="Product Item">
+            <h3>Premium Wireless Headphones</h3>
+            <p>High-quality sound with long-lasting battery life.</p>
+            <div class="price">$149.99</div>
+        </article>
 
-.catalog-card h3 {
-    font-size: 18px;
-    margin-bottom: 8px;
-    color: #2c3e50;
-}
+        <!-- Item 7 -->
+        <article class="product-card">
+            <img src="https://placeholder.com" alt="Product Item">
+            <h3>Premium Wireless Headphones</h3>
+            <p>High-quality sound with long-lasting battery life.</p>
+            <div class="price">$149.99</div>
+        </article>
 
-.catalog-card .desc {
-    font-size: 14px;
-    color: #7f8c8d;
-    margin-bottom: 15px;
-    flex-grow: 1;
-}
+        <!-- Item 8 -->
+        <article class="product-card">
+            <img src="https://placeholder.com" alt="Product Item">
+            <h3>Premium Wireless Headphones</h3>
+            <p>High-quality sound with long-lasting battery life.</p>
+            <div class="price">$149.99</div>
+        </article>
 
-.card-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+        <!-- Item 9 -->
+        <article class="product-card">
+            <img src="https://placeholder.com" alt="Product Item">
+            <h3>Premium Wireless Headphones</h3>
+            <p>High-quality sound with long-lasting battery life.</p>
+            <div class="price">$149.99</div>
+        </article>
 
-.price {
-    font-weight: bold;
-    font-size: 18px;
-    color: #27ae60;
-}
+        <!-- Item 10 -->
+        <article class="product-card">
+            <img src="https://placeholder.com" alt="Product Item">
+            <h3>Premium Wireless Headphones</h3>
+            <p>High-quality sound with long-lasting battery life.</p>
+            <div class="price">$149.99</div>
+        </article>
+    </main>
 
-.buy-btn {
-    padding: 6px 12px;
-    background: #2ecc71;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
+    <!-- RESPONSIVE FOOTER -->
+    <footer class="responsive-layout footer-container">
+        <!-- Column 1: Social Media -->
+        <div class="footer-column">
+            <h4>Social Media</h4>
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">X / Twitter</a>
+        </div>
 
-.buy-btn:hover {
-    background: #27ae60;
-}
+        <!-- Column 2: Emailing and Calling Buttons -->
+        <div class="footer-column">
+            <h4>Contact Actions</h4>
+            <button onclick="location.href='mailto:info@example.com'">Email Us</button>
+            <button onclick="location.href='tel:+1234567890'">Call Us</button>
+        </div>
+
+        <!-- Column 3: Privacy and Newsletter Buttons -->
+        <div class="footer-column">
+            <h4>Information</h4>
+            <button>Privacy Policy</button>
+            <button>Newsletter</button>
+        </div>
+    </footer>
+
+</body>
+</html>

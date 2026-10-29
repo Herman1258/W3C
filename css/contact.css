@@ -1,0 +1,130 @@
+/* Universal Base Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f6f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* --- MOBILE-FIRST COLLAPSE LAYOUT ENGINE --- */
+.responsive-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.contact-main {
+    flex: 1;
+}
+
+/* DESKTOP MEDIA QUERY: Switch row configurations to side-by-side columns */
+@media (min-width: 768px) {
+    .header-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .contact-main {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .contact-info, .contact-form-box {
+        flex: 1;
+    }
+
+    .footer-container {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+}
+
+/* --- ELEMENT PRESENTATION STYLES --- */
+.header-container {
+    background-color: #2c3e50;
+    color: white;
+}
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+.nav-links a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+/* Form Styling */
+.contact-form-box {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #e1e8ed;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 15px;
+}
+.form-group label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #34495e;
+}
+.form-group input, .form-group textarea {
+    padding: 10px;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+    font-size: 14px;
+}
+.submit-btn {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.submit-btn:hover {
+    background-color: #2980b9;
+}
+
+/* Footer Styling */
+.footer-container {
+    background-color: #34495e;
+    color: white;
+    margin-top: auto;
+}
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footer-column a {
+    color: #bdc3c7;
+    text-decoration: none;
+}
+.footer-column button {
+    padding: 8px 14px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: left;
+    width: max-content;
+}
